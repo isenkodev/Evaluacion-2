@@ -1,13 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300);
-
-body {
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');body {
     height: 100vh;
     overflow: hidden;
     font-family: "Cascadia Code";
-    background: #E8EBF7;
+    background: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .login-page {
@@ -19,38 +19,48 @@ body {
 .form {
     position: relative;
     z-index: 1;
-    background: #ACBED8;
+    background: #ffffffc5;
     max-width: 200px;
     margin: 0 auto 100px;
     padding: 30px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 0 10px 2px rgba(44, 109, 121, 0.5);
+    box-shadow: 0 0 10px 2px rgb(255, 0, 0);
 
 }
 
 .form input {
-    font-family: "Poppins", sans-serif;
+    font-family: "Cascadia code", sans-serif;
     outline: 0;
     background: #E8EBF7;
     width: 100%;
-    border: 1;
-    border-color: #ACBED8;
     border-radius: 7px;
-    
     margin: 0 0 15px;
     padding: 15px;
+    border: 0;
     box-sizing: border-box;
     font-size: 14px;
 
 }
 
+.form input{
+    border: 1px solid #E8EBF7 ;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form input:focus{
+    box-shadow: 0 0 10px 2px rgb(255, 0, 0);
+    transition: 0.6 ease-in-out;
+}
+
 .form button {
-    font-family: Cascadia Code;
+    font-family: "Cascadia code", sans-serif;
     background: #E8EBF7;
+    border: 0;
     width: 100%;
-    border: 1;
-    border-color: #ACBED8;
     padding: 15px;
     color: black;
     border-radius: 7px;
@@ -58,12 +68,14 @@ body {
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .form button:hover,
 .form button:active,
 .form button:focus {
-    background: #E0E6FF;
+    box-shadow: 0 0 10px 2px rgb(255, 0, 0);
+    border-color: yellow;
 }
 
 .form .message {
