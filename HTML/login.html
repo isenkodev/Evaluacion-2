@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../IMG/logos.png">
-    <title>Iniciar sesion</title>
+    <title>Iniciar sesión</title>
     <link rel="stylesheet" href="../CSS/login.css">
 </head>
 <body>
@@ -18,13 +18,14 @@
       <input type="email" placeholder="Correo" required/>
       <input type="password" placeholder="Contraseña" required/>
       <button type="submit">Crear cuenta</button>
-      <p class="message">Tienes una cuenta? <a href="#">Iniciar Sesion</a></p>
+      <p class="message">Tienes una cuenta? <a href="#">Iniciar Sesión</a></p>
     </form>
     <form class="login-form" method="post">
       <h2><i class="fas fa-lock"></i>Log in</h2>
       <input type="email" placeholder="Correo" required />
-      <input type="password" placeholder="Contraseña" required/>
-      <button type="submit" name="send2">INICIAR SESION </button>
+      <input type="password" id="contraseña" placeholder="Contraseña" required />
+      <div id="error" class="error-message"></div> <!-- Nuevo elemento para mostrar el mensaje de error -->
+      <button type="button" onclick="loguear()">INICIAR SESION</button>
       <p class="message">No tienes una cuenta? <a href="#">Crear una cuenta</a></p>
     </form>
   </div>

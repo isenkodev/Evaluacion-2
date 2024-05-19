@@ -6,39 +6,33 @@
     <title>Taller Mecanico Rayo Makween</title>
     <link rel="stylesheet" href="../CSS/index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <style>
+        .error-message {
+            color: red;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar" aria-label="Main navigation">
-
-                <a href="index.html"><img class="logomac" src="../IMG/image.png"></a>
-                <ul class="navbar-nav" role="navigation">
-                <li><a href="#" class="navbar-link" aria-label="Inicio">Inicio</a></li>
-                <li><a href="#" class="navbar-link" aria-label="Trabajos">Trabajos</a></li>
-                <li><a href="#" class="navbar-link" aria-label="Trabajadores">Trabajadores</a></li>
-                <li><a href="#" class="navbar-link" aria-label="Ventas">Ventas</a></li>
-                <li><a href="#" class="navbar-link" aria-label="Soporte">Soporte</a></li>
+            <a href="index.html"><img class="logomac" src="../IMG/image.png"></a>
+            <ul class="navbar-nav">
+                <li><a href="index.html" class="navbar-link" aria-label="Inicio">Inicio</a></li>
+                <li><a href="trabajos.html" class="navbar-link" aria-label="Trabajos">Trabajos</a></li>
+                <li><a href="trabajadores.html" class="navbar-link" aria-label="Trabajadores">Trabajadores</a></li>
+                <li><a href="ventas.html" class="navbar-link" aria-label="Ventas">Ventas</a></li>
+                <li><a href="soporte.html" class="navbar-link" aria-label="Soporte">Soporte</a></li>
             </ul>
-            
             <div class="searchBox">
-
-                <input class="searchInput" type="text" name="" placeholder="Buscar por Categoria">
-                <button class="searchButton" href="#">
-                <i class='bx bx-search-alt'></i>
+                <input class="searchInput" type="text" name="" placeholder="Buscar por Categoria" onkeypress="buscarYRedirigir(event)">
+                <button class="searchButton" onclick="buscarYRedirigir()">
+                    <i class='bx bx-search-alt'></i>
                 </button>
             </div>
-            
-
-            <div class="navbar-user">
-                <a href="#" class="navbar-user-link" aria-label="Mi Cuenta">Mi Cuenta</a>
-                <a href="#" class="navbar-user-link" aria-label="Carrito">Carrito</a>
-            </div>
+            <a href="login.html"><button class="desc">Desconectar</button></a>
         </nav>
     </header>
-    <main>
-        <!-- Main content goes here -->
-    </main>
-    <script src="../JS/main.js"></script>
 </body>
+<script src="../JS/main.js"></script> 
 </html>

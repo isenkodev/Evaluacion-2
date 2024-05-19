@@ -3,7 +3,7 @@
     height: 100vh;
     overflow: hidden;
     font-family: "Cascadia Code";
-    background: whitesmoke;
+    background: #1c1c1c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,22 +19,22 @@
 .form {
     position: relative;
     z-index: 1;
-    background: #ffffffc5;
-    border: 2px solid;
+    background: whitesmoke;
+    border: px solid;
     border-color: red;
     max-width: 200px;
     margin: 0 auto 100px;
     padding: 30px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 0 400px 5px rgb(255, 0, 0);
+    box-shadow: 0 0 9px 0cap rgb(255, 0, 0);
 
 }
 
 .form input {
     font-family: "Cascadia code", sans-serif;
     outline: 0;
-    background: #E8EBF7;
+    background: white;
     width: 100%;
     border-radius: 7px;
     margin: 0 0 15px;
@@ -46,7 +46,7 @@
 }
 
 .form input{
-    border: 1px solid #E8EBF7 ;
+    border: 1px solid rgba(45, 49, 42, 0.233); ;
     padding: 10px;
     font-size: 16px;
     outline: none;
@@ -59,8 +59,9 @@
 }
 
 .form button {
+    position: relative;
     font-family: "Cascadia code", sans-serif;
-    background: #E8EBF7;
+    background: rgba(45, 49, 42, 0.233);
     border: 0;
     width: 100%;
     padding: 15px;
@@ -71,6 +72,7 @@
     transition: all 0.3 ease;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    margin-top: 12px;
 }
 
 .form button:hover,
@@ -93,4 +95,8 @@
 
 .form .register-form {
     display: none;
+}
+
+.error-message{
+    color: red;
 }
