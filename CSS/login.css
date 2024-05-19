@@ -20,12 +20,14 @@
     position: relative;
     z-index: 1;
     background: #ffffffc5;
+    border: 2px solid;
+    border-color: red;
     max-width: 200px;
     margin: 0 auto 100px;
     padding: 30px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 0 10px 2px rgb(255, 0, 0);
+    box-shadow: 0 0 400px 5px rgb(255, 0, 0);
 
 }
 
