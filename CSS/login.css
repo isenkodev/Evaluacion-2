@@ -1,33 +1,35 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:300);
 @import url('https://fonts.cdnfonts.com/css/cascadia-code');body {
     height: 100vh;
     overflow: hidden;
     font-family: "Cascadia Code";
-    background: #1c1c1c;
+    background: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-
+.logo img{
+    width: 150px;
+}
 .login-page {
     width: 300px;
     padding: 10% 0 0;
     margin: auto;
+    color: white;
+
 }
 
 .form {
     position: relative;
     z-index: 1;
-    background: whitesmoke;
-    border: px solid;
+    background: #333333;
+    border: 2px solid;
     border-color: red;
     max-width: 200px;
     margin: 0 auto 100px;
     padding: 30px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 0 9px 0cap rgb(255, 0, 0);
 
 }
 
@@ -61,7 +63,7 @@
 .form button {
     position: relative;
     font-family: "Cascadia code", sans-serif;
-    background: rgba(45, 49, 42, 0.233);
+    background: rgb(148, 27, 27);
     border: 0;
     width: 100%;
     padding: 15px;
@@ -89,7 +91,7 @@
 }
 
 .form .message a {
-    color: gray;
+    color: red;
     text-decoration: none;
 }
 
