@@ -1,3 +1,37 @@
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Check login status on page load
+    updateLoginStatus();
+
+    // Add click event listener for login/logout
+    document.getElementById('login').addEventListener('click', function(event) {
+        if (isLoggedIn()) {
+            logout();
+            updateLoginStatus();
+            event.preventDefault();
+        }
+    });
+});
+
+function isLoggedIn() {
+    return localStorage.getItem('loggedIn') === 'true';
+}
+
+function updateLoginStatus() {
+    const loginLink = document.getElementById('login');
+    if (isLoggedIn()) {
+        loginLink.textContent = 'Desconectar';
+        loginLink.href = 'login.html'; // Prevent navigation
+    } else {
+        loginLink.textContent = 'Iniciar Sesión';
+        loginLink.href = 'login.html';
+    }
+}
+
+function logout() {
+    localStorage.setItem('loggedIn', 'false');
+}
+
 function BuscadorHtml(event) {
     event.preventDefault(); // Prevenir que el formulario se envíe de la manera tradicional
 
@@ -34,7 +68,6 @@ $('.message a').click(function(){
     $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 });
 
-
 function loguear() {
     let username = document.querySelector(".login-form input[type='email']").value;
     let password = document.querySelector(".login-form input[type='password']").value;
@@ -70,3 +103,4 @@ function loguear() {
         }, 2000);
     }
 }
+
