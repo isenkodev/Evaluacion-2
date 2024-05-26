@@ -234,3 +234,77 @@ body {
         width: 80px;
     }
 }
+
+
+/*Trabajos*/
+
+
+.trabajos-text h2{
+    background: #333333;
+    border: 2px solid red;
+    border-radius: 20px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 5vh;
+    padding: 2vh;
+    font-size: 16px;
+}
+
+/* index.css */
+
+/* Contenedor del carrusel centrado */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px; /* Ajusta el tamaño máximo del carrusel */
+    padding: 20px; /* Espacio adicional alrededor del carrusel */
+}
+
+/* Ajustes del carrusel */
+.carousel {
+    width: 100%;
+}
+
+.carousel-inner {
+    justify-content: center;
+}
+
+
+.carousel-item img {
+    width: 100px;
+}
+
+/* Ajustes de las flechas del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+/* Indicadores centrados */
+.carousel-indicators {
+    justify-content: center;
+}
+
+.carousel-indicators button {
+    background-color: red;
+}
+
+.trabajos-text p{
+    background: #333333;
+    border: 2px solid red;
+    border-radius: 20px;
+    color: white;
+    padding: 2vh;
+    font-size: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+.carousel-item img{
+    border: 2px solid red;
+    border-radius: 20px;
+}

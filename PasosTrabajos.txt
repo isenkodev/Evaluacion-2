@@ -1,0 +1,7 @@
+1. Crear cada html para los trabajos
+
+2. avanzar con las cards trabajadores
+
+-- Mostrar un search para buscar el nombre del mecanico y mostrar la card con su nombre apellido, edad , especialidad y rango.
+
+---------
