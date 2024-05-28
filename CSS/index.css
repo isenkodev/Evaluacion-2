@@ -277,6 +277,17 @@ body {
     width: 100px;
 }
 
+.trabajos-text p{
+    background: #333333;
+    border: 2px solid red;
+    border-radius: 20px;
+    color: white;
+    padding: 2vh;
+    font-size: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+
+}
 /* Ajustes de las flechas del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
@@ -292,19 +303,133 @@ body {
     background-color: red;
 }
 
-.trabajos-text p{
-    background: #333333;
+.carousel-item img {
     border: 2px solid red;
     border-radius: 20px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: white;
-    padding: 2vh;
-    font-size: 12px;
-    max-width: 500px;
-    margin: 0 auto;
-
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.carousel-item img{
+
+.carousel-captions {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.card-info {
+    background-color: #333333;
     border: 2px solid red;
-    border-radius: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
 }
+
+.card-info .logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Espacio entre el logo y la imagen del trabajo */
+}
+
+.card-info .img-1 {
+    width: 50%;
+    border: red 5px solid;
+    height: auto;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-detalles {
+    margin-top: 10px;
+}
+
+.card-detalles p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh; /* Ajusta esto según tu diseño */
+  }
+  
+  .button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333333;
+    border: none;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 2px red;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: red;
+    align-items: center;
+  }
+  
+  .button:hover .svgIcon {
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+  }
+  
+  .button::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Volver";
+    color: white;
+    font-size: 0px;
+  }
+  
+  .button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    transition-duration: 0.3s;
+  }
+  

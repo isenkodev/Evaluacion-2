@@ -21,7 +21,7 @@ function updateLoginStatus() {
     const loginLink = document.getElementById('login');
     if (isLoggedIn()) {
         loginLink.textContent = 'Desconectar';
-        loginLink.href = 'login.html'; // Prevent navigation
+        loginLink.href = 'login.html'; 
     } else {
         loginLink.textContent = 'Iniciar Sesión';
         loginLink.href = 'login.html';
