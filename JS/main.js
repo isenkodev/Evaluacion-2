@@ -59,11 +59,11 @@ function BuscadorHtml(event) {
             setTimeout(function() {
                 searchInput.setAttribute('placeholder', 'Buscar por categoria');
             }, 2000);
-            searchInput.value = ''; // Limpiar el campo de búsqueda
+            searchInput.value = ''; 
     }
 }
 
-/*Animacion .mesage para el login y registro*/ 
+
 $('.message a').click(function(){
     $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 });
@@ -104,3 +104,45 @@ function loguear() {
     }
 }
 
+document.getElementById('supportForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    let isValid = true;
+    const correo = document.getElementById('correo').value;
+    const nombre = document.getElementById('nombre').value;
+    const mensaje = document.getElementById('mensaje').value;
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const nameRegex = /^[a-zA-Z\s]{30,}$/;
+    const invalidCharsRegex = /[#!<>.{}+]/;
+    
+    document.getElementById('correo-error').textContent = '';
+    document.getElementById('nombre-error').textContent = '';
+    document.getElementById('mensaje-error').textContent = '';
+    
+
+    if (!correo) {
+        isValid = false;
+        document.getElementById('correo-error').textContent = 'Por favor, ingrese su correo.';
+    } else if (!emailRegex.test(correo)) {
+        isValid = false;
+        document.getElementById('correo-error').textContent = 'Ingrese un correo válido.';
+    }
+    if (!nombre) {
+        isValid = false;
+        document.getElementById('nombre-error').textContent = 'Por favor, ingrese su nombre.';
+    } else if (nameRegex.test(nombre)) {
+        isValid = false;
+        document.getElementById('nombre-error').textContent = 'El nombre no debe contener números y debe tener más de 30 caracteres.';
+    } else if (invalidCharsRegex.test(nombre)) {
+        isValid = false;
+        document.getElementById('nombre-error').textContent = 'El nombre contiene caracteres inválidos.';
+    }
+        if (!mensaje) {
+        isValid = false;
+        document.getElementById('mensaje-error').textContent = 'Por favor, ingrese un mensaje.';
+    }
+    if (isValid) {
+        
+    }
+});
