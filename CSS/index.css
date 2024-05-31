@@ -160,12 +160,12 @@ body {
     max-width: 300px;
     box-sizing: border-box;
     text-align: center;
-    margin: 0 10px; /* Agregamos un margen horizontal para evitar que se pegue al borde */
+    margin: 0 10px; 
 }
 
 @media (max-width: 700px) {
     .text-box {
-        max-width: calc(50% - 20px); /* Ajustamos el ancho para que sean dos por fila */
+        max-width: calc(50% - 20px);
     }
 }
 
@@ -187,7 +187,7 @@ body {
 
 @media (max-width: 700px) {
     .nube-text {
-        margin: 10vh 5vw; /* Ajuste de margen para dispositivos más pequeños */
+        margin: 10vh 5vw; 
     }
 }
 
@@ -238,7 +238,6 @@ body {
 
 /*Trabajos*/
 
-
 .trabajos-text h2{
     background: #333333;
     border: 2px solid red;
@@ -251,16 +250,13 @@ body {
     font-size: 16px;
 }
 
-/* index.css */
-
-/* Contenedor del carrusel centrado */
 .carousel-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    max-width: 600px; /* Ajusta el tamaño máximo del carrusel */
-    padding: 20px; /* Espacio adicional alrededor del carrusel */
+    max-width: 600px;
+    padding: 20px; 
 }
 
 /* Ajustes del carrusel */
@@ -288,7 +284,10 @@ body {
     margin: 0 auto;
 
 }
-/* Ajustes de las flechas del carrusel */
+
+
+
+/* Ajustes del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
     width: 5%;
@@ -350,7 +349,7 @@ body {
     width: 150px;
     height: auto;
     display: block;
-    margin: 0 auto 10px; /* Espacio entre el logo y la imagen del trabajo */
+    margin: 0 auto 10px; 
 }
 
 .card-info .img-1 {
@@ -376,7 +375,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5vh; /* Ajusta esto según tu diseño */
+    height: 5vh;
   }
   
   .button {
@@ -497,18 +496,18 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff; /* Cambia el color de fondo según tu preferencia */
+    background-color: #007bff;
     color: white;
     cursor: pointer;
     transition: background-color 0.7s;
   }
   
   .btn-cart:hover {
-    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+    background-color: #0056b3; 
   }
   
   .btn-cart i {
-    margin-right: 5px; /* Espacio entre el icono y el texto */
+    margin-right: 5px; 
   }
   
   .card:hover .card-text{
@@ -649,7 +648,7 @@ body {
 }
 
 .input-soporte {
-  border: 2px solid #ccc; /* Color de borde por defecto */
+  border: 2px solid #ccc;
   padding: 8px;
   border-radius: 5px;
   width: calc(100% - 20px);
@@ -658,7 +657,7 @@ body {
 }
 
 .input-soporte:focus {
-  border-color: red; /* Cambio de color del borde al seleccionar */
+  border-color: red; 
 }
 
 textarea.input-soporte {
@@ -675,7 +674,7 @@ textarea.input-soporte {
   display: block;
   width: 100%;
   text-align: center;
-  margin-top: 10px; /* Espacio encima del botón */
+  margin-top: 10px;
   transition: background-color 0.3s ease;
 }
 
@@ -688,19 +687,19 @@ textarea.input-soporte {
   border: 2px solid red;
   padding: 20px;
   width: 70%;
-  max-width: 600px; /* Limita el tamaño máximo de la caja */
-  margin: 20px auto; /* Centrado horizontal */
-  border-radius: 20px; /* Borde redondeado */
-  box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+  max-width: 600px; 
+  margin: 20px auto; 
+  border-radius: 20px; 
+  box-sizing: border-box; 
 }
 
 .logito {
-  text-align: center; /* Centrado del logo */
-  margin-bottom: 20px; /* Espacio debajo del logo */
+  text-align: center; 
+  margin-bottom: 20px; 
 }
 
 .logito img {
-  max-width: 150px; /* Ajusta el tamaño máximo del logo */
+  max-width: 150px;
   height: auto;
   display: block;
   margin: 0 auto;
